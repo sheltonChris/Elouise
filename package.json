@@ -1,8 +1,8 @@
 {
   "name": "evento-aniversario",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
+    "build": "parcel build source/index.html",
     "dev": "parcel source/index.html source/styles/main.scss source/scripts/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
