@@ -82,6 +82,7 @@
     }
 
     @media (max-width:1023px){
+        
         &__details{
             width: 90%;
 
@@ -89,7 +90,10 @@
     }
 
     @media (max-width:768px){
-        .container{
+        width: 100%;
+        overflow: hidden;
+
+        .container{    
             display: block;
 
         }
@@ -107,6 +111,7 @@
             width: 100%;
             display: block;
             margin: 0 auto;
+            max-width: 260px;
         }
     }
 }
