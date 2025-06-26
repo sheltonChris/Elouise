@@ -82,25 +82,31 @@
     }
 
     @media (max-width:1023px){
-        .container{
+        &__details{
             width: 90%;
+
         }
     }
 
     @media (max-width:768px){
         .container{
             display: block;
-            width: 80%;
+
         }
 
         padding: 80px 0;
 
         &__details{
             margin-bottom: 16px;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 20px;
         }
 
         &__img{
             width: 100%;
+            display: block;
+            margin: 0 auto;
         }
     }
 }

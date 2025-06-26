@@ -4,7 +4,9 @@
     background-size: cover;
 
     @media (max-width:1024px){
-        background-size: contain;
+        background-image: url(../images/templateElouise-tablet.png);
+        background-size: cover;
+        min-height: 50vh;
         background-repeat: no-repeat;
     }
 
