@@ -14,7 +14,7 @@ const contadorTempo = setInterval(function(){
     const minEmMs = 1000 * 60;
 
     const diasAteEvento = Math.floor(distanciaAteEvento / diaEmMs);
-    const horasAteEvento = Math.floor((diasAteEvento % diaEmMs) / horasEmMs);
+    const horasAteEvento = Math.floor((distanciaAteEvento % diaEmMs) / horasEmMs);
     const minAteEvento = Math.floor((distanciaAteEvento % horasEmMs ) / minEmMs);
     const secAteEvento = Math.floor((distanciaAteEvento % minEmMs) / 1000);
 
