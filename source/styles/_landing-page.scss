@@ -1,0 +1,106 @@
+@use './components/var' as *;
+
+@font-face {
+    font-family: Cupid Love;
+    src: url(../fonts/Cupid-Love.ttf);
+    font-weight: 400;
+}
+
+.landing-page {
+    padding: 180px 0;
+
+    &--primeiro-dia{
+        background-image: linear-gradient($corSet, $corSec);
+    }
+
+    &--primeiro-mes{
+        background-image: linear-gradient($corSec, $corQnt);
+    }
+
+    &--segundo-mes{
+        background-image: linear-gradient($corQnt, $CorQrt);
+    }
+
+    &--terceiro-mes{
+        background-image: linear-gradient($CorQrt, $corSex);
+    }
+
+    &--quarto-mes{
+        background-image: linear-gradient($corSex, $corSet);
+
+        
+    }
+
+    &--quinto-mes{
+        background-image: linear-gradient($corSet);
+    }
+
+    &__title{
+        font-family: Cupid Love, sans-serif;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+    
+
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &--image-reverse{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__details{
+
+        &__title{
+            font-family: Cupid Love, sans-serif;
+            font-size: 40px;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        &__text{
+            line-height: 32px;
+            font-size: 20px;
+        }
+    }
+    &__img{
+        max-width: 300px;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    @media (max-width:1023px){
+        .container{
+            width: 90%;
+        }
+    }
+
+    @media (max-width:768px){
+        .container{
+            display: block;
+            width: 80%;
+        }
+
+        padding: 80px 0;
+
+        &__details{
+            margin-bottom: 16px;
+        }
+
+        &__img{
+            width: 100%;
+        }
+    }
+}

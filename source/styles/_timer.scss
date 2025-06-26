@@ -1,0 +1,35 @@
+@use './components/var' as *;
+@font-face {
+    font-family: Romantic;
+    src: url(../fonts/Romantic.ttf);
+    font-weight: 400;
+}
+.timer{
+    background-image: linear-gradient($corSex, $corSet);
+
+
+
+    &__banner{
+        display: flex;
+        justify-content: center;
+
+        span{
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            color: $corSex;
+            padding: 20px;
+            font-size: 25px;
+            font-family: Romantic;
+
+        }
+    }
+
+    @media (max-width:768px){
+        &__banner{
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}

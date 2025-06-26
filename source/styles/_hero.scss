@@ -1,0 +1,17 @@
+.hero {
+    min-height: 70vh;
+    background-image: url(../images/templateElouise.png);
+    background-size: cover;
+
+    @media (max-width:1024px){
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width:767px){
+        background-size: cover;
+        background-image: url(../images/templateElouise-mobile.png);
+        min-height: 30vh;
+
+    }
+}
